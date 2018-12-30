@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="./assets/images/coding-favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+    
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+        <img src="./assets/images/matrix-gif.gif" style="width:500px;height:100px"></img>
+    
+            <h1 class="display-3" id="title">Web Trivia Game</h1>
+            <hr>
+        </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <img src="assets/images/matrix-text.gif" id="Web-Gif" alt="Funny Web Gif">
+        <div>
+            <h3 id="timer"></h3>
+        </div>
+    </div>
+
+    <div class="offset-md-1"></div>
+
+    <div class="col-md-8" id="game-area">
+        <div id="start-page" class="start-page-text">
+            <h2>Get ready to play</h2>
+            <p>Test your <i>Web knowledge</i> with this multiple choice trivia game. You have 60 seconds to
+                answer all the questions and the game ends automatically when time has elapsed. Good luck!</p>
+            <div class="btn btn-primary" id="start-button">Start
+            </div>
+        </div>
+
+        <div>
+            <div id="questions-box">
+            </div>
+        </div>
+
+        <div class="hidden" id="end-page">
+            <h2>Here are your scores:</h2>
+            <p id="correct-answers"></p>
+            <p id="incorrect-answers"></p>
+            <p id="unanswered"></p>
+        </div>
+    </div>
+</div>
+
+<!-- JQuery Link -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="./assets/javascript/main.js"></script>
+
+</body>
+</html>

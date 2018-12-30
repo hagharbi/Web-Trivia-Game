@@ -1,0 +1,11 @@
+body {
+    background: black;
+}
+
+#title {
+    color: white;
+}
+
+#game-area, #timer, hr {
+    color: lightgray;
+}
